@@ -26,6 +26,7 @@ def extract_features(img_path, model):
     return result / norm(result)
 
 # This will Ensure images folder exists
+# You have to create a images folder and add your dataset of images in that (you can download the image dataset from kaggle)
 image_folder = "images"
 if not os.path.exists(image_folder):
     raise FileNotFoundError(f"❌ Folder '{image_folder}' not found! Place images inside it.")
